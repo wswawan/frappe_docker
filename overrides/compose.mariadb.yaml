@@ -8,7 +8,7 @@ services:
         condition: service_started
 
   db:
-    image: mariadb:10.6
+    image: mariadb:latest
     healthcheck:
       test: mysqladmin ping -h localhost --password=${DB_PASSWORD}
       timeout: 3000s
