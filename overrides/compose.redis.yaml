@@ -10,17 +10,17 @@ services:
       - redis-socketio
 
   redis-cache:
-    image: redis:6.2-alpine
+    image: redis:latest
     volumes:
       - redis-cache-data:/data
 
   redis-queue:
-    image: redis:6.2-alpine
+    image: redis:latest
     volumes:
       - redis-queue-data:/data
 
   redis-socketio:
-    image: redis:6.2-alpine
+    image: redis:latest
     volumes:
       - redis-socketio-data:/data
 
